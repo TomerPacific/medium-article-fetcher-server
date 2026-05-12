@@ -3,9 +3,10 @@ import express from 'express';
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { parse } = require('rss-to-json');
+const app = express();
 const port = process.env.PORT || 3000;
 
-const app = express();
+
 const baseURL = "https://medium.com/feed/@";
 
 app.use(bodyParser.json());
